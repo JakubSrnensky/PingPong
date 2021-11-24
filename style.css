@@ -1,0 +1,83 @@
+html,
+body{
+    background-color:black;
+    height:100vh;
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pong-wrapper{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top:calc(50% - 50px);
+    left:50%;
+    width: 900px;
+    height: 600px;
+}
+
+canvas{
+    background-color: black;
+}
+
+#numberFirst{
+    color: white;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 80px;
+    left: calc(50% - 45px);
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#numberSecond{
+    color: white;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 80px;
+    left: calc(50% + 45px);
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#winner{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color:black;
+    background-color:white;
+    padding:20px 30px;
+    display:none;
+    font-size: 60px;
+    text-align:center;
+    font-weight: bold;
+}
+
+#winner.show{
+    display:block;
+}
+
+#legend{
+    font-weight: bold;
+    color:white;
+    font-size: 13px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:5px;
+}
+
+.playerFirst{
+    color:white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.playerSecond{
+    color:white;
+    font-weight: bold;
+    float: right;
+    display: inline-block;
+}
